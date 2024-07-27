@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Dashboard</title>
+    <link rel="stylesheet" href="perfomance.css">
+</head>
+<body>
+    <header>
+        <h1>Performance Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section id="performance-dashboard">
+            <h2>Performance Dashboard</h2>
+            <div class="card">
+                <h3>Overall Rating</h3>
+                <p id="overall-rating">Loading...</p>
+            </div>
+            <div class="card">
+                <h3>Goals Achievement</h3>
+                <p id="goals-achievement">Loading...</p>
+            </div>
+            <div class="card">
+                <h3>Key Metrics</h3>
+                <p id="key-metrics">Loading...</p>
+            </div>
+        </section>
+        <section id="performance-reviews">
+            <h2>Performance Reviews</h2>
+            <div class="card">
+                <h3>Review History</h3>
+                <ul id="review-history">
+                    <!-- Review items will be added here -->
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Upcoming Reviews</h3>
+                <p id="upcoming-reviews">Loading...</p>
+            </div>
+            <div class="card">
+                <h3>Reviewer Comments</h3>
+                <p id="reviewer-comments">Loading...</p>
+            </div>
+        </section>
+        <section id="goals-objectives">
+            <h2>Goals and Objectives</h2>
+            <form id="set-goals-form">
+                <input type="text" id="goal-name" placeholder="New Goal">
+                <button type="submit">Add Goal</button>
+            </form>
+            <div class="card">
+                <h3>Goal Progress</h3>
+                <div id="goals-progress">Loading...</div>
+            </div>
+            <div class="card">
+                <h3>Completed Goals</h3>
+                <ul id="completed-goals">
+                    <!-- Completed goals will be added here -->
+                </ul>
+            </div>
+        </section>
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <div class="card">
+                <h3>Awards and Recognitions</h3>
+                <ul id="awards-recognitions">
+                    <!-- Awards and recognitions will be added here -->
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Milestones</h3>
+                <ul id="milestones">
+                    <!-- Milestones will be added here -->
+                </ul>
+            </div>
+        </section>
+        <section id="training-development">
+            <h2>Training and Development</h2>
+            <div class="card">
+                <h3>Training Courses</h3>
+                <ul id="training-courses">
+                    <!-- Training courses will be added here -->
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Certifications</h3>
+                <ul id="certifications">
+                    <!-- Certifications will be added here -->
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Development Plan</h3>
+                <p id="development-plan">Loading...</p>
+            </div>
+        </section>
+        <section id="performance-analytics">
+            <h2>Performance Analytics</h2>
+            <div class="card">
+                <h3>Trends</h3>
+                <canvas id="trends-chart" width="400" height="200"></canvas>
+            </div>
+            <div class="card">
+                <h3>Comparative Analysis</h3>
+                <canvas id="comparison-chart" width="400" height="200"></canvas>
+            </div>
+        </section>
+    </main>
+    <script src="performance.js"></script>
+</body>
+</html>

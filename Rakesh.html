@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Redirect to login if not logged in
+        if (!localStorage.getItem('loggedIn')) {
+            window.location.href = 'login.html';
+        } else {
+            console.log('User is logged in'); // Log if the user is logged in
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">Municipal Corporation</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-section="attendance">Attendance</a></li>
+                <li><a href="http://127.0.0.1:5500/helpdesk.html">help desk</a></li>
+                <li><a href="training.html" >Training</a></li>
+                <li><a href="#" class="nav-link" data-section="payroll">Payroll</a></li>
+                <li><a href="task.html">Tasks</a></li>
+                <li><a href="setting.html">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="content-section">
+            <div class="user-profile">
+                <img src="employee.jpg" alt="Profile Picture">
+                <div class="basic-info">
+                    <h2>Rakesh Sharma</h2>
+                    <p>Manager, Municipal</p>
+                    <p>Email: Rakesh.sharma@example.com</p>
+                    <p>Phone: +9635457890</p>
+                </div>
+            </div>
+            <div class="dashboard-overview">
+                <h3>Welcome, John!</h3>
+                <div class="quick-stats">
+                    <div class="stat">
+                        <h4>Days Worked This Month</h4>
+                        <p>20</p>
+                    </div>
+                    <div class="stat">
+                        <h4>Total Leaves Taken</h4>
+                        <p>2</p>
+                    </div>
+                    <div class="stat">
+                        <h4>Current Projects</h4>
+                        <p>3</p>
+                    </div>
+                    <div class="stat">
+                        <h4>Upcoming Trainings</h4>
+                        <p>1</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="employee-directory" class="content-section" style="display: none;">
+            <h3>Employee Directory</h3>
+            <!-- Employee directory details here -->
+        </section>
+        <section id="attendance" class="content-section" style="display: none;">
+            <h3>Attendance Summary</h3>
+            <button id="clock-in-btn">Clock In</button>
+            <button id="clock-out-btn">Clock Out</button>
+            <p id="clock-in-time"></p>
+            <p id="clock-out-time"></p>
+            <h3>Attendance Summary</h3>
+            <form id="attendance-form">
+                <div>
+                    <button type="button" id="clock-in-btn">Clock In</button>
+                    <button type="button" id="clock-out-btn">Clock Out</button>
+                </div>
+            </form>
+            <div id="attendance-summary">
+                <p id="clock-in-time"></p>
+                <p id="clock-out-time"></p>
+                <p id="total-hours"></p>
+            </div>
+                <h3>Performance Analytics</h3>
+                <button id="redirect-btn">Go to Detailed Performance Page</button>
+                <!-- Performance graphs here -->
+        <section id="training" class="content-section" style="display: none;">
+            <h3>Training Management</h3>
+            <p>For more details on training management, please visit the <a href="training.html" id="training-link">Training Page</a>.</p>
+            <!-- Training details here -->
+        </section>
+        
+        <section id="payroll" class="content-section" style="display: none;">
+            <h3>Payroll Information</h3>
+            <!-- Payroll details here -->
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

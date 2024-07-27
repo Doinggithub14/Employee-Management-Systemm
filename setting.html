@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Task Management</title>
+    <link rel="stylesheet" href="setting.css">
+</head>
+<body>
+    <header>
+        <h1>Municipal Corporation Employee Portal</h1>
+    </header>
+
+    <main>
+        <section id="settings">
+            <h2>Profile Settings</h2>
+            <form id="settings-form">
+                <label for="profile-photo">Profile Photo:</label>
+                <input type="file" id="profile-photo" name="profile-photo" accept="image/*">
+                <img id="current-photo" src="employee.jpg" alt="Current Photo" style="display: block; margin: 1rem 0; max-width: 100px;">
+
+                <label for="profile-name">Name:</label>
+                <input type="text" id="profile-name" name="profile-name" required>
+
+                <label for="profile-email">Email:</label>
+                <input type="email" id="profile-email" name="profile-email" required>
+
+                <label for="profile-phone">Phone Number:</label>
+                <input type="text" id="profile-phone" name="profile-phone" required>
+
+                <button type="submit">Save Changes</button>
+            </form>
+            <p id="settings-success-message" class="hidden">Your profile has been updated successfully!</p>
+        </section>
+    </main>
+
+    <script src="setting.js"></script>
+</body>
+</html>

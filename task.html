@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Task Management</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <header>
+        <h1>Municipal Corporation Employee Portal</h1>
+    </header>
+
+    <main>
+        <section id="task-list">
+            <h2>Assigned Tasks</h2>
+            <ul id="tasks">
+                <!-- Task items will be dynamically added here -->
+            </ul>
+        </section>
+
+        <section id="task-update">
+            <h2>Submit Task Update</h2>
+            <form id="task-update-form">
+                <label for="task-id">Task ID:</label>
+                <input type="text" id="task-id" name="task-id" required>
+
+                <label for="task-status">Task Status:</label>
+                <input type="text" id="task-status" name="task-status" required>
+
+                <label for="task-comments">Comments:</label>
+                <textarea id="task-comments" name="task-comments" required></textarea>
+
+                <label for="task-photo">Upload Photo:</label>
+                <input type="file" id="task-photo" name="task-photo" accept="image/*">
+
+                <button type="submit">Submit</button>
+            </form>
+            <p id="success-message" class="hidden">Your task update has been submitted. Thank you!</p>
+        </section>
+    </main>
+
+    <script src="task.js"></script>
+</body>
+</html>

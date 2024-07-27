@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipal Corporation Employee Directory</title>
+    <link rel="stylesheet" href="help.css">
+</head>
+<body>
+    <header>
+        <h1>Municipal Corporation Employee Directory</h1>
+    </header>
+
+    <main>
+        <section id="employee-directory">
+            <h2>Employee Directory</h2>
+            <!-- Employee profiles go here -->
+        </section>
+
+        <section id="helpdesk">
+            <h2>Report an Issue</h2>
+            <form id="helpdesk-form">
+                <label for="employee-name">Name:</label>
+                <input type="text" id="employee-name" name="employee-name" required>
+
+                <label for="employee-email">Email:</label>
+                <input type="email" id="employee-email" name="employee-email" required>
+
+                <label for="issue-description">Issue Description:</label>
+                <textarea id="issue-description" name="issue-description" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <p id="success-message" class="hidden">Your issue has been reported. Thank you!</p>
+        </section>
+    </main>
+
+    <script src="help.js"></script>
+</body>
+</html>
