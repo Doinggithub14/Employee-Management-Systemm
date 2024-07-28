@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mock user data (in real application, this would come from your backend)
     const userProfile = {
         photo: 'default-avatar.png',
-        name: 'John Doe',
-        email: 'john.doe@example.com',
-        phone: '123-456-7890'
+        name: 'Rakesh Sharma',
+        email: 'rakesh.sharma@example.com',
+        phone: '+91 9671937492'
     };
 
     // Function to load user data into the form

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+    <link rel="stylesheet" href="attendance.css"> <!-- Link to your CSS file -->
+    <script defer src="attendaance.js"></script> <!-- Link to your JavaScript file -->
+</head>
+<body>
+    <section id="attendance" class="content-section">
+        <h3>Attendance Summary</h3>
+        <form id="attendance-form">
+            <div>
+                <button type="button" id="clock-in-btn">Clock In</button>
+                <button type="button" id="clock-out-btn">Clock Out</button>
+            </div>
+        </form>
+        <div id="attendance-summary">
+            <p id="clock-in-time"></p>
+            <p id="clock-out-time"></p>
+            <p id="total-hours"></p>
+        </div>
+        <h3>Weekly Attendance</h3>
+        <table id="hours-table" border="1">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Date</th>
+                    <th>Shift Start</th>
+                    <th>Shift End</th>
+                    <th>Clock In</th>
+                    <th>Clock Out</th>
+                    <th>Total Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Records will be dynamically added here -->
+            </tbody>
+        </table>
+    </section>
+    <h3 id="headline">Performance Analytics</h3>
+    <button id="redirect-btn">Go to Detailed Performance Page</button>
+</body>
+</html>
